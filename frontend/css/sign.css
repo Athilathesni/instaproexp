@@ -24,7 +24,8 @@ body {
   width: 100%;
   background: #fff;
   border-radius: 5px;
-  margin-right: 1200px;
+  margin-right: 800px;
+  margin-top: 90px;
   margin-bottom: 200px;
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
 }
@@ -112,7 +113,7 @@ form .row input::placeholder {
 }
 
 form .button input:hover {
-  background: #12876f;
+  background: #333534;
 }
 
 .wrapper form .signup-link {

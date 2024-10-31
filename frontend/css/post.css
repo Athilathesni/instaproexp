@@ -1,5 +1,5 @@
 *{
-    background-color: #55504e;
+    background-color: #666262;
 }
 #post-container {
     display: flex;
@@ -9,6 +9,11 @@
     font-family: Arial, sans-serif;
     gap: 50px;
     margin-right: 1000px;
+    border: 1px solid black;
+    margin-left: 100px;
+    width: 900px;
+    background-color: #666262;
+    box-shadow:0 0 2px 2px rgb(151, 150, 150);
 }
 .post-container-1{
     display: flex;
@@ -80,4 +85,8 @@
     padding: 10px 20px;
     border-radius: 7px;
     border: none;
+}
+#div-btn{
+    display: flex;
+    gap: 10px;
 }
