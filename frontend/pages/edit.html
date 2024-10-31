@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit Post</title>
+    <link rel="stylesheet" href="../css/edit.css">
+</head>
+<body>
+    <form action="" id="form" enctype="multipart/form-data">
+        <div id="post-container">
+            <div id="image-preview" style="border: none;">
+                <img src="" alt="" id="img-preview">
+            </div>
+    
+            <div class="caption" id="post-caption">
+                <input type="text" id="caption" name="caption" placeholder="Enter caption">
+                <div class="description" id="post-description">
+                    <textarea name="description" id="description" placeholder="Enter description"></textarea>
+                </div>
+            </div>
+    
+            
+    
+            <br>
+            <div id="images-container"></div>
+    
+            <!-- <label for="new-images">Upload New Images:</label>
+            <input type="file" id="new-images" name="new-images" multiple accept="image/*"><br><br> -->
+    
+            <div>
+                <button type="submit">Save</button>
+            </div>
+        </div>
+    </form>
+    
+
+
+    <script src="../js/edit.js"></script>
+</body>
+</html>

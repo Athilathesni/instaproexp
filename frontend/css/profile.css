@@ -1,0 +1,83 @@
+.main-class{
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    /* background-color: aquamarine; */
+    margin-top: 50px;
+}
+.main-class-1{
+    width: 400px;
+    height: 600px;
+    background-color:rgb(108, 110, 112);
+    /* padding: 20px; */
+    border-radius: 10px;
+}
+h1{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main-class-1 div{
+    margin-top: 20px;
+    color: aliceblue;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.main-class-1 .img{
+    text-align: center;
+}
+.main-class-1 .img img{
+    border-radius: 50%;
+}
+.main-1-div{
+    padding-left: 80px;
+}
+.btn{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.main-class-1 button{
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius:5px;
+    margin-left: 20px;
+
+}
+.log-btn{
+    color: white;
+    background-color: blue;
+    font-size: 15px;
+}
+.del-btn{
+    color: aliceblue;
+    background-color: brown;
+    font-size: 15px;
+}
+
+
+.main-class-2{
+    width: 600px;
+    /* background-color: bisque; */
+}
+.main-class-2 h3{
+    text-align: center;
+}
+.add-post{
+    text-align: right;
+}
+.post-btn{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(79, 5, 102);
+    color: white;
+}
+.post-page{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
