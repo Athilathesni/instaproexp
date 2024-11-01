@@ -56,7 +56,19 @@ h1{
     background-color: brown;
     font-size: 15px;
 }
-
+.h-btn{
+    width: 90px;
+    height: 37px;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+}
+.h-btn a{
+    text-decoration: none;
+    color: white;
+}
 
 .main-class-2{
     width: 600px;

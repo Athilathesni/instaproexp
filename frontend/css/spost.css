@@ -1,5 +1,5 @@
 *{
-    background-color: #ebae91;
+    background-color: #473f3f;
 }
 #post-container {
     display: flex;
@@ -8,6 +8,14 @@
     margin-top: 100px;
     font-family: Arial, sans-serif;
     gap: 50px;
+}
+.main{
+    border: 1px solid rgb(95, 90, 90);
+    width: 900px;
+    margin-left: 100px;
+    margin-top: 50px;
+    box-shadow: 0 0 2px 2px rgb(53, 51, 51);
+    border-radius: 10px;
 }
 .post-container-1{
     display: flex;
@@ -24,6 +32,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    color: white;
     /* background-color: rgb(245, 223, 196); */
     padding: 80px 40px 40px 40px;
 }
@@ -77,4 +86,22 @@
     padding: 10px 20px;
     border-radius: 7px;
     border: none;
+}
+
+.h-btn{
+    width: 90px;
+    height: 37px;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    background-color: #3d3737;
+}
+.h-btn a{
+    text-decoration: none;
+    color: white;
+}
+.nav{
+   background-color: white; 
+   width: 100%;
+   height: 60px;
 }

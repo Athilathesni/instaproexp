@@ -24,10 +24,10 @@ async function showPost(){
         img.addEventListener("mouseover", () => showPreview(imageSrc));
         imagesContainer.appendChild(img);
     });   
-    // document.getElementById('div-btn').innerHTML=`
-    //     <button class="edit-btn" onclick="editPost()">Edit</button>
-    //     <button class="del-btn" onclick="delPost()">Delete</button>
-    // `
+    document.getElementById('div-btn').innerHTML=`
+        <button class="del-btn" onclick="delPost()">Delete</button>
+         <button class="h-btn"><a href="../index.html">Home</a></button> 
+    `
 }
 showPost()
 

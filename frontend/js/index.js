@@ -23,7 +23,7 @@ async function getUser() {
       let str=[]
       user.data.map((data)=>{
         str += `
-          <a href="../pages/spost?id=${data._id}">
+          <a href="../pages/spost.html?id=${data._id}">
                   <div class="card">
                       <div><img
                               src="${data.pic[0]}"alt height="250" width="200"></div>
