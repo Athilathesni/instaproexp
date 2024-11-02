@@ -1,28 +1,29 @@
 .main-class{
     display: flex;
-    width: 90vw;
+    width: 1000px;
     margin: auto;
-    /* background-color: aquamarine; */
+   height: 400px;
     margin-top: 50px;
+    border: 1px solid rgb(240, 235, 235);
+    box-shadow: 0 0 1px 1px rgb(211, 209, 209);
 }
 .main-class-1{
-    width: 400px;
-    height: 600px;
-    background-color:rgb(108, 110, 112);
-    /* padding: 20px; */
-    border-radius: 10px;
+    width: 500px;
+    height: 400px;
+    background-color:rgb(236, 235, 235);
+    border-radius: 1px;
 }
 h1{
-    color: aliceblue;
+    color: rgb(2, 2, 2);
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
 }
 .main-class-1 div{
-    margin-top: 20px;
-    color: aliceblue;
+    margin-top: -2px;
+    color: rgb(5, 5, 5);
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 .main-class-1 .img{
     text-align: center;
@@ -43,7 +44,7 @@ h1{
     height: 40px;
     border: none;
     border-radius:5px;
-    margin-left: 20px;
+    margin-left: 10px;
 
 }
 .log-btn{
@@ -64,6 +65,7 @@ h1{
     font-size: 15px;
     color: white;
     background-color: black;
+    margin-right: 100px;
 }
 .h-btn a{
     text-decoration: none;
@@ -71,7 +73,7 @@ h1{
 }
 
 .main-class-2{
-    width: 600px;
+    width: 500px;
     /* background-color: bisque; */
 }
 .main-class-2 h3{
@@ -83,10 +85,12 @@ h1{
 .post-btn{
     padding: 10px 20px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     background-color: rgb(79, 5, 102);
     color: white;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 .post-page{
     padding: 20px;

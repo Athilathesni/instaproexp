@@ -44,10 +44,6 @@ document.getElementById('form').addEventListener('submit', async function (e) {
 
     let pic = [...existingImages];
 
-    // if (newImages.length > 0) {
-    //     pic = await uploadNewImages(newImages);
-    // }
-
     const res = await fetch(`http://localhost:3000/api/update/${id}`, {
         method: "PUT",
         headers: {
@@ -65,18 +61,3 @@ document.getElementById('form').addEventListener('submit', async function (e) {
         alert(data.error);
     }
 });
-
-// async function uploadNewImages(files) {
-//     const formData = new FormData();
-//     for (const file of files) {
-//         formData.append('images', file);
-//     }
-
-//     const res = await fetch('http://localhost:3000/api/uploadImages', {
-//         method: 'POST',
-//         body: formData
-//     });
-
-//     const data = await res.json();
-//     return data.imageUrls;  // Assuming the API returns an array of uploaded image URLs
-// }

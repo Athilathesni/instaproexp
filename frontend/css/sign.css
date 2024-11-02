@@ -43,8 +43,10 @@ body {
   justify-content: center;
 }
 span{
-  font-family: cursive;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+
 
 .wrapper form {
   padding: 25px 35px;
@@ -78,24 +80,6 @@ form .row input::placeholder {
   color:white;
 }
 
-/* .wrapper form .row i {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-top: 10px;
-  color: #fff;
-  font-size: 22px;
-  background: #4b4d4c;
-  border: 1px solid #484949;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.wrapper form .pass {
-  margin-top: 12px;
-} */
 
 .wrapper form .pass a {
   color: #050381;

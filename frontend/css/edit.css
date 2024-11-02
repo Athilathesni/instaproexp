@@ -2,62 +2,46 @@ input{
     height: 30px;
     width: 300px;
     margin-bottom: 10px;
-    background-color: #968a8a;
+    background-color: #f3f1f1;
     margin-left: 10px;
     border: none;
 }
 textarea{
     height: 100px;
     width: 300px;
-    background-color: #ada2a2;
+    background-color: #f7f5f5;
 }
-*{
-    background-color: #b3afa7;
+body{
+    background-color: #faf9f6;
 }
-/* form{
-    background-color: #ce9393;
-    border: 1px solid black;
-} */
-/* #post-container {
-   
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-    font-family: Arial, sans-serif;
-    gap: 50px;
-} */
 .main{
     width: 500px;
     border: 1px solid black;
     border-radius: 3px;
     margin-left: 200px;
-    box-shadow: 0 0 2px 2px rgb(105, 103, 103);
+    box-shadow: 0 0 2px 2px rgb(209, 208, 208);
 
 }
 h2{
     color: #f9f9f9;
     text-align: center;
-    background-color: maroon;
+    background-color: rgb(158, 129, 129);
     height: 50px;
     padding: 10px 10px ;
     margin-top: -2px;
 }
 .post-container-1{
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: #d0e2b8; */
     border-radius: 10px;
     padding: 40px;
 }
 .post-container-2{
-    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    /* background-color: rgb(245, 223, 196); */
     padding: 80px 40px 40px 40px;
 }
 .post-container-2 div{
@@ -84,7 +68,6 @@ h2{
     height: 300px;
     width: 300px;
     border: 2px solid #ccc;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
     border-radius: 8px;
@@ -114,17 +97,3 @@ button{
     margin-left: 150px;
     margin-bottom: 10px;
 }
-/* .edit-btn{
-    background-color: rgb(4, 4, 107);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: none;
-}
-.del-btn{
-    background-color: rgb(94, 3, 3);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 7px;
-    border: none;
-} */

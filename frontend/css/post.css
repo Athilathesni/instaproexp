@@ -1,5 +1,5 @@
-*{
-    background-color: #666262;
+body{
+    background-color: #fffdfd;
 }
 #post-container {
     display: flex;
@@ -9,10 +9,10 @@
     font-family: Arial, sans-serif;
     gap: 50px;
     margin-right: 1000px;
-    border: 1px solid black;
+    border: 1px solid rgb(241, 235, 235);
     margin-left: 100px;
     width: 900px;
-    background-color: #666262;
+    background-color: #fffcfc;
     box-shadow:0 0 2px 2px rgb(151, 150, 150);
 }
 .post-container-1{
@@ -20,7 +20,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-color: #d0e2b8; */
     border-radius: 10px;
     padding: 40px;
 }
@@ -30,11 +29,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    /* background-color: rgb(245, 223, 196); */
     padding: 80px 40px 40px 40px;
 }
 .post-container-2 div{
-    color: white;
+    color: rgb(15, 13, 13);
 }
 .post-image {
     height: 100px;

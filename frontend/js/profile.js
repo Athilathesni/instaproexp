@@ -23,7 +23,7 @@ async function getUserDetails() {
     user.post.map((data)=>{
       str+=`
         <a href="../pages/post.html?id=${data._id}">
-        <div><img src="${data.pic[0]}" alt="" height="150" width="150"></div></a>
+        <div><img src="${data.pic[0]}" alt="" height="100" width="100"></div></a>
       `
     })
     document.getElementById('post-page').innerHTML=str
