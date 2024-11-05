@@ -10,7 +10,7 @@ nav{
     display: flex;
     flex-direction: row-reverse;
     padding: 10px 40px;
-    background-color: rgb(117, 102, 102);
+    background-color: rgb(248, 244, 244);
  }
 .nav-sec-2{
     display: flex;

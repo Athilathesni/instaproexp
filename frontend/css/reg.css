@@ -8,7 +8,7 @@
 }
 
 .container {
-  height: 910px;
+  height: 700px;
   width: 100%;
   align-items: center;
   display: flex;
@@ -16,7 +16,7 @@
   background-image: radial-gradient(
     circle farthest-corner at 10% 20%,
     rgb(255, 250, 251) 0%,
-    rgb(90, 84, 79) 90%
+    rgb(253, 251, 249) 90%
   );
 }
 h1{
@@ -35,6 +35,7 @@ h1{
   padding: 10px 30px;
   margin-right: 400px;
   border: 1px solid rgb(104, 98, 98);
+  margin-top: 10px;
 }
 
 .card_title {
