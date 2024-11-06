@@ -107,7 +107,7 @@ export async function deleteUser(req, res) {
 }
 
 export async function deletePost(req, res) {
-    // console.log(req.params); 
+    
     const { id } = req.params;  
     const data = await postSchema.deleteOne({ _id: id })
         .then(() => {
@@ -119,12 +119,7 @@ export async function deletePost(req, res) {
 }
 
 
-// export async function generateOTP(req,res) {
-//     const{email}=req.body
-//     const otp=Math.floor(Math.random()*1000)
-//     console.log(otp);
-    
-//     const info = await transporter.sendMail({
+
  export async function generateOTP(req,res) {
     const {email}=req.body   
      const check = await userSchema.findOne({email})
@@ -145,8 +140,6 @@ export async function deletePost(req, res) {
         res.status(404).send({msg:"This Email has not created user"})
     }  
 }
-
-
 export async function checkOTP(req,res) {
     const {getotp}=req.body
     console.log(getotp);
@@ -156,8 +149,18 @@ export async function checkOTP(req,res) {
     else{
         res.status(404).send({msg:"OTP is incorrect"})
     }
-    
-    
+}
+
+
+
+export async function chpass(req,res) {
+    const{pass,cpass}=req.body
+    if(pass==cpass){
+        res.status(200).send({msg:"successfully saved password"})  
+    }
+    else{
+        res.status(404).send({msg:"password not match try again"})  
+    }
 }
 
 

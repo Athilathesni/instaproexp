@@ -1,7 +1,6 @@
 document.getElementById('form').addEventListener('submit',async function (e) {
     e.preventDefault();
     getotp=document.getElementById('getotp').value
-
     console.log(getotp)
     const res=await fetch('http://localhost:3000/api/checkOTP',{
         method:"POST",
