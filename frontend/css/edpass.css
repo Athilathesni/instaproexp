@@ -1,0 +1,24 @@
+.main{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+h1{
+    margin-left: 20px;
+}
+.main div{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.s1{
+    margin-top: 40px;
+}
+.controls input{
+    margin-left: 35px;
+    background-color: rgb(110, 210, 243);
+    border: none;
+    height: 25px;
+    border-radius: 3px;
+}

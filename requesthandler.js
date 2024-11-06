@@ -4,7 +4,7 @@ import bcrypt from 'bcrypt'
 import nodemailer from "nodemailer"
 import pkg from 'jsonwebtoken'
 const {sign} =pkg
-
+let otp
 
 const transporter = nodemailer.createTransport({
     host: "sandbox.smtp.mailtrap.io",
@@ -119,38 +119,52 @@ export async function deletePost(req, res) {
 }
 
 
-export async function generateOTP(req,res) {
-    const{email}=req.body
-    const otp=Math.floor(Math.random()*1000)
+// export async function generateOTP(req,res) {
+//     const{email}=req.body
+//     const otp=Math.floor(Math.random()*1000)
+//     console.log(otp);
+    
+//     const info = await transporter.sendMail({
+ export async function generateOTP(req,res) {
+    const {email}=req.body   
+     const check = await userSchema.findOne({email})
+     if(check){
+   otp=Math.floor(Math.random()*10000)
     console.log(otp);
-    
     const info = await transporter.sendMail({
-        from: '"Maddison Foo Koch 👻" <maddilson53@ethereal.email>', // sender address
-        to: email, // list of receivers
-        subject: "OTP", // Subject line
-        text: "verify", // plain text body
-        html: `<b>otp is ${otp}</b>`, // html body
-      });
-    console.log("message send:%s",info.messageId);
-    res.status(200).send({msg:"otp send"})  
-
-
-
-
-    transporter.sendMail(email, (error, info) => {
-        if (error) {
-            console.log(error);
-            return res.status(500).json({ success: false, message: 'Error sending email.' });
-        }
-        console.log('Email sent: ' + info.response);
-        res.json({ success: true, message: 'Password reset link sent.' });
-    });
-    
-    // Start the server
-    app.listen(process.env.PORT, () => {
-        console.log(`server started at http://localhost:${process.env.PORT}`);
-    });
+    from: '"Maddison Foo Koch 👻" <maddilson53@ethereal.email>', // sender address
+    to: email, // list of receivers
+    subject: "OTP", // Subject line
+    text: "verify", // plain text body
+    html: `<b>otp is ${otp}</b>`, // html body
+});
+      console.log("Message sent: %s", info.messageId)
+      res.status(200).send({msg:"OTP sent"})
+    }
+    else{
+        res.status(404).send({msg:"This Email has not created user"})
+    }  
 }
+
+
+export async function checkOTP(req,res) {
+    const {getotp}=req.body
+    console.log(getotp);
+    if(otp == getotp){
+        res.status(200).send({msg:"OTP is correct"})
+    }
+    else{
+        res.status(404).send({msg:"OTP is incorrect"})
+    }
+    
+    
+}
+
+
+
+
+
+
 
 
 
