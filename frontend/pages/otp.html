@@ -9,15 +9,19 @@
 <body>
     <div class="main">
         <h1>ENTER OTP</h1>
-    <form action="" id="form">
+        <form action id="form">
         <label for="">check your email for otp</label><br>
         <div class="input">
-        <input type="number" id="getotp">
-        <input type="number" id="getotp">
-        <input type="number" id="getotp">
-        <input type="number" id="getotp">
+                <input type="text" maxlength="1" id="otp1"
+                    oninput="moveToNext(this, 'otp2')">
+                <input type="text" maxlength="1" id="otp2"
+                    oninput="moveToNext(this, 'otp3')">
+                <input type="text" maxlength="1" id="otp3"
+                    oninput="moveToNext(this, 'otp4')">
+                <input type="text" maxlength="1" id="otp4"
+                    oninput="moveToNext(this, null)">
         </div><br>
-        <button type="submit">Submit</button>
+        <button type="submit" onclick="submitOTP()">Submit</button>
     </form>
 </div>
 

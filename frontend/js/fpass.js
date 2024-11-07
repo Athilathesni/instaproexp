@@ -14,6 +14,7 @@ document.getElementById('form').addEventListener('submit',async function (e) {
     const data=await res.json()
     if(res.status==200){
         alert(data.msg)
+        localStorage.setItem('email',email)
         window.location.href="../pages/otp.html"
     }
     else{

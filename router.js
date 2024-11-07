@@ -16,6 +16,5 @@ router.route('/deleteUser/:id').delete(rh.deleteUser)
 router.route('/deletePost/:id').delete(rh.deletePost)
 router.route('/otp').post(rh.generateOTP)
 router.route('/checkOTP').post(rh.checkOTP)
-router.route('/chpass').post(rh.chpass)
 
 export default router;
