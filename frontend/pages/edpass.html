@@ -8,52 +8,25 @@
 </head>
 <body>
     
-    <div id="container">
         <div id="container-inner" class="main">
             <h1>Change Password</h1>
+            <p>Password must be at least 4 characters long</p>
 		<form id="form">
 				
 				<div>
-					<label for="password_new">Your new password</label>
-					<input type="text" name="pass" id="pass" />
+					<label for="newpassword">Your new password</label>
+					<input type="text" name="pass" id="nepass" />
 				</div>
 				<div>
-					<label for="password_confirm">Confirm password</label>
-					<input type="text" name="cp" id="cpass" />
+					<label for="confirmpassword">Confirm password</label>
+					<input type="text" name="cp" id="copass"/>
 				</div>
-				<div class="controls">
-					<input id="submit" name="submit" type="submit" value="Save Password" />
-				</div>
+				<button type="submit">save password</button>
 		</form>
 			
-	</div></div>
+	</div>
 	<script src="../js/edpass.js"></script>	
 </body>
 </html>
 
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Password</title>
-    <link rel="stylesheet" href="../css/edpass.css">
-</head>
-<body>
-    <div class="main">
-        <h2>Edit Password</h2>
-        <form id="form">
-            <label for="Pass">New Password</label>
-            <input type="password" id="Pass" required>
-
-            <label for="cPass">Confirm Password</label>
-            <input type="password" id="cPass" required>
-
-            <button type="submit">Save Password</button>
-            <p id="error-message" class="error-message"></p>
-        </form>
-    </div>
-    <script src="../js/edpass.js"></script>
-</body>
-</html> -->

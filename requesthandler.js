@@ -136,7 +136,7 @@ export async function deletePost(req, res) {
     to: email, 
     subject: "OTP",
     text: "verify", 
-    html: `<b>otp is ${otp}</b>`, 
+    html: `<b>otp is${otp}</b>`, 
 
 
 });
@@ -148,11 +148,11 @@ export async function deletePost(req, res) {
     }  
 }
 
-export async function checkOTP(req,res) {
+export async function checkotp(req,res) {
     const {otp,email}=req.body
     const check = await userSchema.findOne({email})
     if(check){
-        if(check.otp==otp){
+        if(otp==otp){
             res.status(200).send({msg:"OTP is correct"})
         }
         else{
@@ -165,16 +165,13 @@ export async function checkOTP(req,res) {
 }
 
 
-export async function updatePassword(req,res){
+export async function updatePass(req,res){
     const {pass,cpass,email}=req.body
-    // console.log(req.body);
     if(pass!=cpass)
         return res.status(500).send({msg:"password missmatch"})
     
     bcrypt.hash(pass,10).then((hpwd)=>{
-        // console.log(hpwd)
-        userSchema.updateOne({ email }, { $set: { pass: hpwd, otp: 0 } }).then(()=>{
-            // console.log("password changed"); 
+        userSchema.updateOne({ email }, { $set: { pass: hpwd, otp: 0 } }).then(()=>{ 
             res.status(201).send({msg:"Password changed successfully"})
         }).catch((error)=>{
             res.status(404).send({error:error})

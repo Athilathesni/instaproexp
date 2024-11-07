@@ -11,13 +11,12 @@ document.getElementById('form').addEventListener('submit',async function (e) {
     otp=otp1+otp2+otp3+otp4
     console.log(otp);
     
-    const res=await fetch('http://localhost:3000/api/checkOTP',{
+    const res=await fetch('http://localhost:3000/api/checkotp',{
         method:"POST",
         headers:{"Content-Type":'application/json'},
         body:JSON.stringify({otp,email})
     })
     console.log(res);
-    
     
     const data=await res.json()
     if(res.status==200){
@@ -28,12 +27,6 @@ document.getElementById('form').addEventListener('submit',async function (e) {
         alert(data.msg)
     }
  })
-
-
-
-
-
-
  function moveToNext(current, nextFieldID) {
     if (current.value.length === current.maxLength) {
         if (nextFieldID) {
@@ -41,7 +34,6 @@ document.getElementById('form').addEventListener('submit',async function (e) {
         }
     }
 }
-
 function submitOTP() {
     let otp = '';
     for (let i = 1; i <= 4; i++) {
@@ -49,8 +41,6 @@ function submitOTP() {
     }
     
     if (otp.length === 4) {
-        // alert(`OTP Entered: ${otp}`);
-        // Here you can add code to verify the OTP or send it to a server
     } else {
         alert('Please enter a 4-digit OTP.');
     }
